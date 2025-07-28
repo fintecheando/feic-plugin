@@ -253,7 +253,7 @@ public class PentahoReportingProcessServiceImpl implements ReportingProcessServi
                     }
                 };
                 
-                producto = (Producto) jdbcTemplate.queryForObject(sqlProducto, new Object[] {clientId}, mapperProducto);
+                productos = (ArrayList<Producto>) jdbcTemplate.query(sqlProducto, new Object[] {clientId}, mapperProducto);
                 
                 String sqlCliente = "SELECT firstname,lastname,date_of_birth,email_address FROM m_client " + 
                         " WHERE id = ?";

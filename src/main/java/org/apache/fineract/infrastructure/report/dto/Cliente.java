@@ -4,7 +4,7 @@
  */
 package org.apache.fineract.infrastructure.report.dto;
 
-import java.util.ArrayList;
+import java.util.List;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -22,7 +22,7 @@ public class Cliente {
     private String segundoNombre;
     private String otrosNombres;
     private String fechaNacimiento;
-    private ArrayList<String> nacionalidades;
+    private List<String> nacionalidades;
     private Nacimiento nacimiento;
     private Integer condicionMigratoria;
     private String otraCondicionMigratoria;
@@ -33,7 +33,7 @@ public class Cliente {
     private String numeroDocumentoIdentificacion;
     private String emisionPasaporte;
     private String nit;
-    private ArrayList telefonos;
+    private List telefonos;
     private String email;
     private String direccionResidencia;
     private String zona;
